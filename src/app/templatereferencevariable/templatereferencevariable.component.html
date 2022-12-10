@@ -1,0 +1,9 @@
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <label for="name">Name</label>
+    <input type="text" #ref id="name" class="form-control" name="name" ngModel required />
+    <button type="submit">Submit</button>
+  </form>
+  <p>{{ref.value}}</p>
+  <!-- <div [hidden]="!itemForm.form.valid">
+    <p>{{ submitMessage }}</p>
+  </div> -->

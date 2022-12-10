@@ -1,0 +1,80 @@
+<!-- <form [formGroup]="form"> -->
+    <!-- <input type="text" formControlName="name"/>
+    <div formGroupName="contact">
+        <input type="text" formControlName="email"/>
+        <input type="text" formControlName="phone"/>
+    </div>
+    <ul>
+         <li *ngFor="let topic of topics.controls">
+            {{topic.value}}
+        </li> 
+    </ul>     -->
+<!-- </form> -->
+
+
+<!-- <favorite (change)="onFavoriteChanged($event)"></favorite> -->
+This is Example of service
+ <courses></courses>
+
+<!-- <ul class="nav nav-pills nav-fill">
+
+  <li [class.active]="viewMode=='map'"><a (click)="viewMode='map'">Map View</a></li>
+  <li [class.active]="viewMode=='list'"><a (click)="viewMode='list'">List View</a></li>
+</ul> -->
+<!-- <h1>{{viewMode}}</h1>
+
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchcase="'map'"> Map View</div>
+    <div *ngSwitchcase="'list'">List View Content</div>
+    <div *ngSwitchDefault>OtherWise</div>
+</div>
+ -->
+ <div class='container' style="margin-top:100px">
+
+
+this is in app.component.html
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" [(ngModel)]="id" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Name</label>
+      <input type="text" class="form-control" [(ngModel)]="name" id="exampleInputPassword1" placeholder="Name">
+    </div>
+   
+    <button type="submit" class="btn btn-primary my-3" [style.backgroundColor]="cansave? 'skyblue':'green'" (click)="add()">Add</button>
+
+
+        <div *ngFor="let course of courses,index as i">
+            {{i}}-{{course.name}}
+            <button class="btn-secondary my-3" style="margin-left: 10px;" (click)="Remove(course)">Remove</button>
+        </div>
+</div>
+
+ <div class="container">
+<div style="margin-top: 50px;" [hidden]="courses.length==0">
+    <li *ngFor="let course of courses">
+        {{course.name}}
+        
+    </li>
+</div> 
+
+    <div [hidden]="courses.length==0">
+        No Courses
+    </div> 
+
+</div> 
+
+
+ <app-panel >
+    
+        <ng-container class="heading py-3">
+               Headingdsfd
+        </ng-container>
+        <div class="body py-3">
+            <h2>Body</h2>
+            <p>para</p>
+        </div>
+
+</app-panel>

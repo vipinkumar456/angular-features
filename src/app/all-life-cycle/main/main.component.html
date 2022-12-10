@@ -1,0 +1,7 @@
+<p>Parent Called</p>
+<button class="btn-primary" (click)="toggle()">click</button>
+<input type="text" [(ngModel)]="channelName">
+{{channelName}}
+<app-submain *ngIf="isChild" [channelName]="channelName">
+    <h2 #templatereferencevariable>Learning LifeCycle Hooks</h2>
+</app-submain>

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.content{
+    margin-top: 50px;
+    padding: 0 25px;
+    transition: all 1s ease;
+}
+.navbar{
+    background-color: #d7e4e8;
+}
+
+h2{
+    color: yellow;
+}
+.emulated-message{
+    color: yellow;
+}

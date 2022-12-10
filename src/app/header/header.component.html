@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/index/post']">Post <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/newcourse']">New Course</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/signup']">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/contactform']">Contract Form</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            RXJS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" [routerLink]="['/index/observable']">Observable</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/index/subject']">Subject</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/index/pipeable']">pipeable</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/index/scheduler']">Scheduler</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/index/schedulerargument']">Scheduler Argument</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/index/arrayargument']">Array Argument</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/index/latestfrom']">Latest From</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/lifecycles']">Life Cycle</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/view-encapsulation']">View Encapsulation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/content-projection']">Content Projection</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/dynamic-component']">Dynamic Component</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/directive']">Directive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/template-reference-variable']">Template</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/index/programs']">Programs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
